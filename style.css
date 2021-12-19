@@ -69,77 +69,50 @@ h1, h2, h3, h4, h5, h6, p{
 /**************** end of Utility Classes *******************/
 
 /********************** Header styling *********************/
-
-.header{
-    min-height: 100vh;
-    background: linear-gradient(rgba(173, 103, 230, 0.6), rgba(166, 42, 238, 0.6)), url("images/header.jpg") center/cover no-repeat;
-    color: #fff;
-}
-.top-nav a{
-    color: #fff;
-}
-.brand-and-navBtn{
-    background: rgb(186, 89, 241);
-    position: relative;
-    z-index: 999;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 24px;
-    padding: 15px 25px;
-    color: var(--white);
-}
-.brand-name{
-    letter-spacing: 5px;
-    cursor: pointer;
-}
-.navBtn{
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--white);
-    cursor: pointer;
-}
-.navBtn:hover{
-    background: #fff;
-    color: #000;
-    transition: var(--transition);
-}
-.top-nav{
-    background: rgb(102, 34, 171);
-    transform: translateY(-600px);
-    transition: var(--transition);
-}
-.showNav{
-    transform: translateY(0);
-}
-.search-icon{
-    display: none;
-}
-.top-nav ul li{
-    padding: 10px 0;
-}
-.top-nav ul a{
-    position: relative;
-    font-weight: 500;
-    font-size: 18px;
+.topnav {
+    margin:0;
+    background-color: transparent ;
+    overflow: hidden;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-    display: block;
-}
-.top-nav ul a::after{
-    content: "";
-    height: 2px;
-    background: var(--lightGreen);
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    transition: var(--transition);
-}
-.top-nav ul a:hover::after{
-    width: 100px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+   background-color: #775aa5 ;
+
+ }
+  .topnav input{
+      overflow: center;
+      float: right;
+      position: relative;
+      padding: 10px 10px ;
+  }
+  .topnav button{
+     float : right;
+     position:relative;
+   
+    background-color: transparent ; /* highlight#6C3 */
+    
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-decoration: none;
+     font-size: 16px;
+ }
+ .taj{ min-height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
+    color:#F0D9FF;
+    padding: 20px;
 }
 .about{
     margin-top: -160px;
@@ -148,6 +121,8 @@ h1, h2, h3, h4, h5, h6, p{
     width: 140px;
     height: 140px;
     border-radius: 50%;
+    margin-top: 60px;
+    position: relative;
 }
 .about-img{
     background: #fff;
@@ -156,12 +131,7 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 auto;
     border-radius: 50%;
 }
-.about-content h2{
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 35px;
-    color: var(--lightGreen);
-}
+
 .about-content h3{
     color: #fff;
     font-size: 30px;
@@ -187,33 +157,6 @@ blockquote span{
     letter-spacing: 5px;
     display: block;
 }
-.social-icons{
-    width: 350px;
-    margin: 40px auto 0 auto;
-    padding-bottom: 30px;
-}
-.social-icons ul a{
-    color: #fff;
-    font-size: 30px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
-}
-.social-icons ul{
-    display: flex;
-    justify-content: space-around;
-}
-.social-icons ul a:hover{
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
-}
-
 /********************* End of Header ***********************/
 
 
