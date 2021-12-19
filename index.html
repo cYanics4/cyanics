@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- header -->
+  <div class = "container-about">
+        <div class = "about-content">
+            <div class = "about-img flex">
+                <img src = "images/about-img.jpg" alt = "photographer img">
+            </div>
+           
+           <h3>Say Hye! to INDIA</h3>
+            <blockquote>
+                Entitled 'Golden Bird',<br>
+Attacked by kings around the <br>
+Each culture incorporated in it,<br>
+A diverse India formed.<br>
+
+Clutched by the rulers of west,<br>
+Suffered for 200 years.<br>
+Blood shed like water,<br>
+Liberty - only dream.<br>
+
+At last,<br>
+Liberated into pieces,<br>
+Independent but separated.<br>
+
+It hold its diversity<br>
+close to its heart.<br>
+Uncountable languages,<br>
+but people are one.<br>
+So many religions,<br>
+a place for every one.<br>
+Regional conflicts are not here to stay,<br>
+Love thy fellow beings is what we say.<br>
+
+Politicians do play cruel,<br>
+Sacrificing innumerable lives,<br>
+with greed for power.<br>
+
+
+In the end,<br>
+Unity is something that survives,<br>
+Love cannot die, neither can be killed.<br>
+
+                </blockquote>
+        </div>
+
+        
+    </div>
+</header>
+<!-- end of header -->
+
+
+<center><h1 ><strong>GALLERY</strong></h1></center>
+<div class="img-full-gallery">
+    <img src="images/image1.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image2.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image3.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image4.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image5.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image6.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image7.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image8.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image9.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image10.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image11.jpg" alt="" onclick="openpopup(this.src)">
+    <img src="images/image12.jpg" alt="" onclick="openpopup(this.src)">
+</div>
+
+
+
+<script>
+    var fullimgpop = document.getElementById("pop-full-img");
+    var fullimg = document.getElementById("fullimg");
+
+
+    function openpopup(pic){
+    fullimgpop.style.display = "flex";
+    fullimg.src = pic;
+    }
+
+    function closefullimg(){
+        fullimgpop.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
